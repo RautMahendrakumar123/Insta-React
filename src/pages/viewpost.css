@@ -1,0 +1,11 @@
+.main {
+    background-color: lightyellow;
+}
+.viewpost-header{
+    width: 90%;
+    margin-left: 5%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
