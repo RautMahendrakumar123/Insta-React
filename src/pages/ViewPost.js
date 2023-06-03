@@ -11,7 +11,7 @@ function ViewPost() {
   const [posts,setPosts]=useState([]);
 
   useEffect(()=>{
-    fetch('http://localhost:8080/posts')
+    fetch(`${process.env.REACT_APP_BASE_URL}/posts`)
     .then(res=>res.json())
     .then(data=>{
       setPosts(data)

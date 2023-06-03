@@ -18,7 +18,7 @@ function Card(props) {
                 </header>
 
                 <section className='image-container'>
-                    <img src={"http://localhost:8080/images/" + item.postImage} alt="leveling" />
+                    <img src={`${process.env.REACT_APP_BASE_URL}/images/`+ item.postImage} alt="leveling" />
                 </section>
 
 

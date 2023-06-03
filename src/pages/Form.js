@@ -27,7 +27,7 @@ export default function Form() {
         formData.append("PostImage", file);
        
       
-         fetch('http://localhost:8080/upload',{
+         fetch(`${process.env.REACT_APP_BASE_URL}/upload`,{
           method:'POST',
           headers:{ },
           body: formData,
